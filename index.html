@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news api</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <section id="filter" class="py-5">
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="category" class="form-label">Category</label>
+                            <select class="form-control" id="category" name="category">
+                                <option value="business" selected>Business</option>
+                                <option value="health">Health</option>
+                                <option value="science">Science</option>
+                                <option value="sports">Sports</option>
+                                <option value="technology">Technology</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="search" class="form-label">Search</label>
+                            <input type="text" class="form-control" id="search">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success w-100 mt-4">Filter</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="data" class="py-5">
+        <div class="container">
+            <div class="row"></div>
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center"></ul>
+            </nav>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/function.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
